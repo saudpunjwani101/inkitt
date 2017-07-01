@@ -1,0 +1,31 @@
+{
+  "name": "inkittTest",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "buffer": "^5.0.6",
+    "entities": "^1.1.1",
+    "events": "^1.1.1",
+    "fast-html-parser": "^1.0.1",
+    "htmlparser2": "^3.9.2",
+    "react": "16.0.0-alpha.12",
+    "react-native": "0.45.1",
+    "react-native-html-parser": "0.0.4",
+    "react-native-htmlview": "^0.9.0",
+    "stream": "0.0.2",
+    "util": "^0.10.3"
+  },
+  "devDependencies": {
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "2.0.0",
+    "jest": "20.0.4",
+    "react-test-renderer": "16.0.0-alpha.12"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
