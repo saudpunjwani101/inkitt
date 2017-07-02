@@ -1,5 +1,5 @@
 import domToElement from './domToElement';
-import htmlparser from 'htmlparser2';
+import htmlparser from 'htmlparser2-without-node-native';
 import React from 'react';
 
 export default function(rawHtml, done) {

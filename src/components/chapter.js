@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Text, ListView,View, StyleSheet} from 'react-native'
+import {Text, ListView,View, ScrollView} from 'react-native'
 
 import htmlToElement from '../helper/htmlToElement';
 import getChapters from '../Apis/getBookChapter';
@@ -27,16 +27,16 @@ class Chapter extends Component {
     .then(()=>this.startHtmlRender(this.state.chapter))
   }
 
-  render()  {
+  render() {
     if (this.state.element) {
       return (
-        <View style={{margin:30}}>
-            <Text children={this.state.element} />
-        </View>
+        <ScrollView
+          children={this.state.element}
+          style={{margin:25}}>
+        </ScrollView>
       )
     }
-
-    return <Text />
+    return <View />;
   }
 
   startHtmlRender(chapter) {
